@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+
+class persona{
+    //creo un constructor de la clase persona
+    constructor(nombre){
+        this.nombre = nombre;
+
+    }
+    apellidos(apellidos){
+        this.apellidos = apellidos;
+    }
+
+
+}
+
+//se crea la clase profesor la cual hereda de persona
+
+class proffesor extends persona{
+
+    constructor(nombre,id){
+        //super pide a la clase padre lo que se determine por parentesis
+        super(nombre);
+
+        
+        //construyo el constructor de profesor con la clase heredada de el padre
+        this.nombre = nombre
+        this.clave= id;
+
+    }
+}
+
+var profesor = new profesor ("miguel", 12345);
+
+
+    </script>
+    
+</body>
+</html>

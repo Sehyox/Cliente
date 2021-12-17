@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var num = Math.floor(Math.random() * 100)
+var imp = " ";
+
+var cont = 0;
+
+do  {
+    var usuario= prompt(" mete numero " + imp);
+    if (isNaN(usuario)) {
+        alert("usa numeros");
+    }else{
+        if (usuario <num) {
+        var imp = " + " ;
+        }else{
+        var imp = " - " ;
+        }
+        cont ++;
+
+    }
+}while (usuario != num)
+
+document.writeln("correcto");
+document.writeln("num de intentos: "+ cont);
+
+function reacarga() {
+    window.location.reload();
+}
+
+    </script>
+    
+<button type="button" onclick="reacarga()">juega de nuevo</button>
+
+</body>
+</html>
