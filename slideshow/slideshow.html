@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideshow</title>
+</head>
+<body>
+
+    <img name="slider" alt="">
+    <button onclick="siguiente()" >siguiente</button>
+    <button onclick="anterior()" >siguiente</button>
+    
+</body>
+
+<script>
+
+let array0 = 'luffy.jpg';
+let array1 = 'kumagawa.jpg';
+let array2 = 'itachi.jpg';
+let array3 = 'eren.jpg';
+
+const arrayimg = [array0, array1, array2, array3]
+let i = 0;
+document.slider.src= arrayimg[i];
+
+function siguiente(){
+
+i++;
+if (i>3) {
+    i=0;
+}
+document.slider.src= arrayimg[i];
+}
+
+function anterior() {
+    i--;
+if (i<0) {
+    i=3;
+}
+document.slider.src= arrayimg[i];
+}
+
+
+
+
+</script>
+</html>
