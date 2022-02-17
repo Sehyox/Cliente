@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmacion</title>
+</head>
+<body>
+   
+   <a href="https://es.wikipedia.org/wiki/Oda_Nobunaga">Ir a la wikipedia</a>
+    
+    <script>
+        let enlace=document.querySelector("a");
+        enlace.addEventListener("click",function(ev){
+        if(!confirm("¿Realmente desea abandonar esta pagina?")){
+            ev.preventDefault();
+            }
+            
+        });
+    </script>
+    
+</body>
+</html>
